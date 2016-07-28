@@ -109,5 +109,6 @@ public class SimulatedAnnealing {
 
         System.out.println("Final solution distance: " + best.getDistance());
         System.out.println("Tour: " + best);
+        FinalGraph.drawGraph();
     }
 }

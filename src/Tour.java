@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class Tour{
-
     // Holds our tour of cities
     private ArrayList tour = new ArrayList<City>();
     // Cache
@@ -17,6 +16,7 @@ public class Tour{
             tour.add(null);
         }
     }
+
 
     // Constructs a tour from another tour
     public Tour(ArrayList tour){
@@ -86,6 +86,7 @@ public class Tour{
         String geneString = "|";
         for (int i = 0; i < tourSize(); i++) {
             geneString += (i+1) + "th: " + getCity(i).name + "|";
+            FinalGraph.addCity(getCity(i));
         }
         return geneString;
     }

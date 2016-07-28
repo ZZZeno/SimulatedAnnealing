@@ -6,13 +6,13 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 /**
- * Created by qiji on 7/27/16.
+ * Created by Zeno on 7/27/16.
  */
 public class FindLocation {
     private static JPanel imagePanel;
     private static ImageIcon background;
     public static void main(String[] args) {
-        JFrame frame = new JFrame("Jframe");
+        JFrame frame = new JFrame("Location");
         background = new ImageIcon("USA.png");
         JLabel label = new JLabel(background);
         label.setBounds(0, 0, background.getIconWidth(), background.getIconHeight());
